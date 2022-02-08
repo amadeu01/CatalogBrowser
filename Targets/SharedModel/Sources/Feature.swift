@@ -4,7 +4,7 @@ import Foundation
 
 public typealias Featured = [[FeaturedElement]]
 
-public struct FeaturedElement: Codable, Equatable {
+public struct FeaturedElement: Codable, Equatable, Hashable {
     public let type: `Type`
     public let id: String
     public let title: String

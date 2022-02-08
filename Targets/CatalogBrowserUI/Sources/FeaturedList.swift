@@ -23,7 +23,6 @@ public struct FeaturedListView: View {
                 .navigationBarTitle("Featured")
                 .animation(.easeOut, value: 0.3)
         }
-        .navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
 
     private var content: AnyView {
@@ -79,10 +78,35 @@ private extension FeaturedListView {
     func loadedView(
         _ featuredData: Featured
     ) -> some View {
-        VStack {
-            List(featuredData.flatMap({$0}), id: \.id) { data in
-                FeatureCellView(contentData: data)
-                    .frame(height: 150)
+        ScrollView{
+            LazyVStack(alignment: .center, spacing: 4) {
+                Spacer()
+                ForEach(featuredData, id: \.self) { data in
+                    ScrollView(.horizontal) {
+                        LazyHStack(alignment: .top, spacing: 8) {
+                            ForEach(data, id: \.id) { featuredItem in
+                                NavigationLink {
+                                    FeaturedElementDetailView(
+                                        contentData: featuredItem
+                                    )
+                                } label: {
+                                    FeatureCellView(
+                                        contentData: featuredItem
+                                    ).padding()
+                                        .frame(width: 140, height: 140)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .stroke(Color.gray, lineWidth: 1)
+                                        )
+                                }
+
+                            }
+                        }
+                    }.frame(height: 150).padding()
+
+                    Divider()
+                    Spacer()
+                }
             }
         }.padding(.bottom, 0)
     }

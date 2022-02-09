@@ -53,6 +53,36 @@ final class EpidemicSoundAPIClientTests: XCTestCase {
 
         mock.register()
     }
+
+    func test_SearchResource_WhenSearchByMood() async throws {
+        self.stubSearchApiCall()
+
+        let resource = EpidemicSoundResources.searchTracks(forMood: "Euphoric").post
+
+        let searchResult = try await client.send(resource)
+
+        XCTAssertEqual(SearchResult.mock, searchResult)
+    }
+
+    func test_SearchResource_WhenSearchByGenre() async throws {
+        self.stubSearchApiCall()
+
+        let resource = EpidemicSoundResources.searchTracks(forGenre: "Funk").post
+
+        let searchResult = try await client.send(resource)
+
+        XCTAssertEqual(SearchResult.mock, searchResult)
+    }
+
+    private func stubSearchApiCall() {
+        let catalogURL = URL(string: "https://agw.epidemicsound.com/music/search")!
+
+        let mock = Mock(url: catalogURL, dataType: .json, statusCode: 200, data: [
+            .post : try! JSONEncoder().encode(SearchResult.mock)
+        ])
+
+        mock.register()
+    }
 }
 
 

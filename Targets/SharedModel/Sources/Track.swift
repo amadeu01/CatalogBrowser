@@ -1,7 +1,6 @@
-
 import Foundation
 
-public struct Track: Codable, Equatable {
+public struct Track: Codable, Equatable, Hashable {
     public let id: Int
     public let title: String
     public let artists: [String]
@@ -14,7 +13,7 @@ public struct Track: Codable, Equatable {
     public let publicSlug: String
     public let coverArt: CoverArt
 
-    internal init(
+    public init(
         id: Int,
         title: String,
         artists: [String],
@@ -44,9 +43,9 @@ public struct Track: Codable, Equatable {
 }
 
 // MARK: - CoverArt
-public struct CoverArt: Codable, Equatable {
-    let baseURL: String
-    let sizes: Sizes
+public struct CoverArt: Codable, Equatable, Hashable {
+    public let baseURL: String
+    public let sizes: Sizes
 
     public init(baseURL: String, sizes: Sizes) {
         self.baseURL = baseURL
@@ -60,7 +59,7 @@ public struct CoverArt: Codable, Equatable {
 }
 
 // MARK: - Sizes
-public struct Sizes: Codable, Equatable {
+public struct Sizes: Codable, Equatable, Hashable {
     public let xs, s, m, l: String
 
     public init(xs: String, s: String, m: String, l: String) {
@@ -79,7 +78,7 @@ public struct Sizes: Codable, Equatable {
 }
 
 // MARK: - StemFull
-public struct StemFull: Codable, Equatable {
+public struct StemFull: Codable, Equatable, Hashable {
     public let stemType: String
     public let s3TrackID: Int
     public let lqMp3URL: String

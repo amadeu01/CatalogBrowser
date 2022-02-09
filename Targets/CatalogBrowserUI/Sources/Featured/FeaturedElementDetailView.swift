@@ -9,7 +9,19 @@ public struct FeaturedElementDetailView: View {
         List {
             imageView().frame(height: 150)
             Section("Info") {
+                Text(self.contentData.id)
                 Text(self.contentData.title)
+                Text(self.contentData.typeName)
+            }
+
+            Section() {
+                NavigationLink {
+                    TrackListView(
+                        featureElement: self.contentData
+                    )
+                } label: {
+                    Text("Tracks")
+                }
             }
         }.navigationTitle(self.contentData.title)
     }
@@ -23,6 +35,12 @@ public struct FeaturedElementDetailView: View {
             )
             Spacer()
         }
+    }
+}
+
+private extension FeaturedElement {
+    var typeName: String {
+        self.type == .genre ? "Genre" : "Mood"
     }
 }
 

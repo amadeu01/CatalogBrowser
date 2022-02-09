@@ -1,20 +1,21 @@
-
-
 import SwiftUI
 import SharedModel
 import NukeUI
+import Common
 
 public struct FeaturedListView: View {
 
     @State private(set) var featuredList: Loadable<Featured>
-    private let loadFeatureData: () async throws -> Featured
+    @Environment(\.injected) private var injected: DIContainer
+    
+    private var loadFeatureData: LoadFeatureDataInteractor {
+        self.injected.interactors.loadFeatureData
+    }
 
     public init(
-        featuredList: Loadable<Featured> = .notRequested,
-        loadFeatureData: @escaping () async throws -> Featured
+        featuredList: Loadable<Featured> = .notRequested
     ) {
         self.featuredList = featuredList
-        self.loadFeatureData = loadFeatureData
     }
 
     public var body: some View {
@@ -82,33 +83,43 @@ private extension FeaturedListView {
             LazyVStack(alignment: .center, spacing: 4) {
                 Spacer()
                 ForEach(featuredData, id: \.self) { data in
-                    ScrollView(.horizontal) {
-                        LazyHStack(alignment: .top, spacing: 8) {
-                            ForEach(data, id: \.id) { featuredItem in
-                                NavigationLink {
-                                    FeaturedElementDetailView(
-                                        contentData: featuredItem
-                                    )
-                                } label: {
-                                    FeatureCellView(
-                                        contentData: featuredItem
-                                    ).padding()
-                                        .frame(width: 140, height: 140)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 8)
-                                                .stroke(Color.gray, lineWidth: 1)
-                                        )
-                                }
-
-                            }
-                        }
-                    }.frame(height: 150).padding()
-
+                    sectionView(data)
                     Divider()
                     Spacer()
                 }
             }
         }.padding(.bottom, 0)
+    }
+
+    private func sectionView(
+        _ sections: [FeaturedElement]
+    ) -> some View {
+        ScrollView(.horizontal) {
+            LazyHStack(alignment: .top, spacing: 8) {
+                ForEach(sections, id: \.id) { featuredItem in
+                    featuredItemView(featuredItem)
+                }
+            }
+        }.frame(height: 150).padding()
+    }
+
+    private func featuredItemView(
+        _ featuredItem: FeaturedElement
+    ) -> some View {
+        NavigationLink {
+            FeaturedElementDetailView(
+                contentData: featuredItem
+            )
+        } label: {
+            FeatureCellView(
+                contentData: featuredItem
+            ).padding()
+                .frame(width: 140, height: 140)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1)
+                )
+        }
     }
 }
 

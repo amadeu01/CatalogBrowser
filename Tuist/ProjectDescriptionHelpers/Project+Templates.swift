@@ -31,8 +31,11 @@ extension Project {
         name: String,
         platform: Platform = .iOS,
         dependencies: [TargetDependency] = [],
-        testDependencies: [TargetDependency] = []
+        testDependencies: [TargetDependency] = [],
+        prodOnly: Bool = false
     ) -> [Target] {
+        var targets: [Target] = []
+
         let sources = Target(
             name: name,
             platform: platform,
@@ -43,20 +46,25 @@ extension Project {
             resources: [],
             dependencies: dependencies
         )
+        targets.append(sources)
 
-        let tests = Target(
-            name: "\(name)Tests",
-            platform: platform,
-            product: .unitTests,
-            bundleId: "io.tuist.\(name)Tests",
-            infoPlist: .default,
-            sources: ["Targets/\(name)/Tests/**"],
-            resources: [],
-            dependencies: [
-                .target(name: name)
-            ] + testDependencies
-        )
-        return [sources, tests]
+        if !prodOnly {
+            let tests = Target(
+                name: "\(name)Tests",
+                platform: platform,
+                product: .unitTests,
+                bundleId: "io.tuist.\(name)Tests",
+                infoPlist: .default,
+                sources: ["Targets/\(name)/Tests/**"],
+                resources: [],
+                dependencies: [
+                    .target(name: name)
+                ] + testDependencies
+            )
+            targets.append(tests)
+        } 
+        
+        return targets
     }
 
     /// Helper function to create the application target and the unit test target.

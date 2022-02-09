@@ -6,13 +6,15 @@ func makeFeatureTargets() -> [Target] {
         name: "CatalogBrowserUI",
         dependencies: [
             .target(name: "SharedModel"),
+            .target(name: "Common"),
             .external(name: "NukeUI")
         ]
     )
     let apiClient = Project.featureFramework(
         name: "EpidemicSoundAPIClient",
         dependencies: [
-            .target(name: "SharedModel")
+            .target(name: "SharedModel"),
+            .target(name: "Common")
         ],
         testDependencies: [
             .external(name: "Difference"),
@@ -22,10 +24,18 @@ func makeFeatureTargets() -> [Target] {
 
     let models = Project.featureFramework(
         name: "SharedModel",
-        testDependencies: []
+        prodOnly: true
     )
 
-    return ui + apiClient + models
+    let common = Project.featureFramework(
+        name: "Common",
+        dependencies: [
+            .target(name: "SharedModel")
+        ],
+        prodOnly: true
+    )
+
+    return ui + apiClient + models + common
 }
 
 

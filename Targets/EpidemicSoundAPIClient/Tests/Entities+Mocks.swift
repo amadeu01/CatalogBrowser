@@ -52,3 +52,42 @@ extension FeaturedElement: Mockable {
         )
     }
 }
+
+extension SearchResult: Mockable {
+    static var mock: Self {
+        .init(
+            tracks: [.mock],
+            page: 1,
+            totalPages: 10,
+            totalHits: 10,
+            total: 10
+        )
+    }
+}
+
+extension Track: Mockable {
+    static var mock: Self {
+        .init(
+            id: 1,
+            title: "Music",
+            artists: [],
+            length: 1,
+            stemFull: .init(
+                stemType: "",
+                s3TrackID: 1,
+                lqMp3URL: "",
+                waveformURL: ""
+            ),
+            bpm: 21,
+            hasVocals: true,
+            energyLevel: "",
+            genres: [],
+            moods: [],
+            publicSlug: "",
+            coverArt: .init(
+                baseURL: "",
+                sizes: .init(xs: "", s: "", m: "", l: "")
+            )
+        )
+    }
+}

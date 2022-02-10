@@ -1,0 +1,1661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F3590B6C900D379DF3E3EE /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D6F5B9FB8BE77EBF943B6 /* Feature.swift */; };
+		02995FD54B1090CC2FA2784D /* Difference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4028D3EE8528346E6DBAA7AF /* Difference.framework */; platformFilter = ios; };
+		04297EA0673A4390243A47A2 /* FeaturedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FC13C73EBEF6428853830 /* FeaturedCellView.swift */; };
+		042B52F162E81C1E9B752037 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863CA1E51E9D32FD75E2626E /* Common.framework */; };
+		0855A5202D5AC7D5FCE6EB7A /* NukeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3512CB12D9FCDD01EF008B67 /* NukeUI.framework */; platformFilter = ios; };
+		0C8EC1DCEFDF68F04F6A95FF /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F79C6E99C2CB48D205E382 /* MoodView.swift */; };
+		1F875D81CEF7D11376BFFA85 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA00EA0151BFB136109CC03E /* Nuke.framework */; platformFilter = ios; };
+		22CB7960B672A12B87B883C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FFE2DE0D2F6B8C25B78585 /* Preview Assets.xcassets */; };
+		23874B3C1A5B5642D83A085A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985A923179C422112E36C8E /* APIError.swift */; };
+		242CE4AF185263375E957214 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E2092DC00D8ACDBA35ABF /* Client.swift */; };
+		32D6264DA5CB7D739D8E8483 /* EpidemicSoundAPIClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6694B5AFC1F7019BA0A84 /* EpidemicSoundAPIClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37DBFD08A0962C4DDBF5F995 /* EpidemicSoundResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7444D77B0FA0E85F5E65BBDF /* EpidemicSoundResources.swift */; };
+		40422067CE26E358A1904036 /* DefaultAPIClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A257143CAA335BB4C2476C /* DefaultAPIClientDelegate.swift */; };
+		4E825664BFC367C5DD75B894 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A62D11E25A00A5849BF242 /* Request.swift */; };
+		4F08E1CAFFA687832E80D9A1 /* FeaturedElementDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515B5E1BA5B3ACF1B16C547 /* FeaturedElementDetailView.swift */; };
+		518BB0F2C0A36B1DFBFF9433 /* FeaturedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6885D7285E285935300AFDBE /* FeaturedList.swift */; };
+		54CB358C610BFE32E80A7EBA /* TrackCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2996190183C44709A6901C /* TrackCellView.swift */; };
+		54E5994C6C41A1D0F16BF2CF /* CatalogBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A054A8BDFDFBC77C28BE5A3 /* CatalogBrowserUITests.swift */; };
+		5BEEF1E45480C2C6AD39FD0D /* CatalogBrowserUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41EBCB6F5985024B75C9B34 /* CatalogBrowserUI.framework */; };
+		61F51B724F5817E507F675E4 /* Entities+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE740B02FA4A6EB5C000B1 /* Entities+Mocks.swift */; };
+		721EC34AFAD0715924C8D234 /* Mocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEEBF1C06E8360297D9A2C /* Mocker.framework */; platformFilter = ios; };
+		76157BF9A28D96ABB06AB130 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863CA1E51E9D32FD75E2626E /* Common.framework */; };
+		76182EF820797CC906803DDE /* CatalogBrowserUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41EBCB6F5985024B75C9B34 /* CatalogBrowserUI.framework */; };
+		79EFC89571DF408508095743 /* SharedModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF9C0996927C81D4EB53FFB /* SharedModel.framework */; };
+		7AECE263B8E6CDCC629BECB9 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD37924EC4AB9279DA53F2 /* ClientTests.swift */; };
+		7EAD26E37687A5FD87822B12 /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07FF0C0429505A849F0ABB9 /* GenreView.swift */; };
+		80BBADC2EA81B5F64326576E /* Diff+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89090F4458166950BD3FF32 /* Diff+Helper.swift */; };
+		81C29C6F66A7BFC4B378FC08 /* Assets+CatalogBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6563694885F6F5FE3C135 /* Assets+CatalogBrowser.swift */; };
+		8DDBADC5D4B0FE02D50BCAFE /* CatalogBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D90F1314B6AB0DFCEAAA8B /* CatalogBrowserTests.swift */; };
+		8F164629CD7475F28D57F89C /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF492040C1B5974A951874 /* DependencyInjector.swift */; };
+		8FDB51960AC6B8EDA7AE8A73 /* CatalogBrowserUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D41EBCB6F5985024B75C9B34 /* CatalogBrowserUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98601F177F0BE6FBFCFD4CA4 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2308ECE35D1083F6564B3B0B /* Loadable.swift */; };
+		98C9F13F3F37C4C5506F3CDA /* CatalogBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B76E4EBEC26CC26FA44490 /* CatalogBrowserApp.swift */; };
+		A7D6E47869A45759F14B7672 /* SharedModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBF9C0996927C81D4EB53FFB /* SharedModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5C96914256166DAD7D9BBD5 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD1BB4BB6D28EE1BA3BA51 /* Serializer.swift */; };
+		B5D2C042B7734D27DF092E4D /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 863CA1E51E9D32FD75E2626E /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B82F95E1CA7FF85DF63ED56E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F641D1898DEC58383210CE /* Track.swift */; };
+		B8F3C0188739620730678872 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55496155831059757D3A6C9C /* Mood.swift */; };
+		BACF9375CAAD1C59813B815D /* Bundle+CatalogBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A936E33D5D58BF16BC8BAD4 /* Bundle+CatalogBrowser.swift */; };
+		C554C923E9D4C3749874C1CC /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7709797A5F06235CA5B9ED0 /* SearchResult.swift */; };
+		C67C568345C829D510BE22C1 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4280E506F74538CD9D3F581 /* Genre.swift */; };
+		D1A20535A3CF61238A5C8BAC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A47D472BC6E877399A8E9A /* ErrorView.swift */; };
+		D2D1FBF40315BB33C8FC9F21 /* SharedModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF9C0996927C81D4EB53FFB /* SharedModel.framework */; };
+		DD9D7AA1BC06B1A623CBCB2A /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63547624E8127C100CBDC38 /* SearchParams.swift */; };
+		E199BEC60C165E0800A0AD86 /* Gifu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BCDB11EBF155C38184E5F7 /* Gifu.framework */; platformFilter = ios; };
+		E4643ED6CD3A2C2C5BEC6095 /* TrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8C1B9BD5B879B5D6C4F30 /* TrackListView.swift */; };
+		E4A6A6065D4676E70B232B39 /* EpidemicSoundAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6694B5AFC1F7019BA0A84 /* EpidemicSoundAPIClient.framework */; };
+		E92F1C3EDC9FF83A1427EB2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE274BE343F468788E743142 /* Assets.xcassets */; };
+		EB31A7EE94DFC4A3D2540CB1 /* InteractorsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B7014ADF29846932886E05 /* InteractorsContainer.swift */; };
+		F23FFE9EAFF19D5932B827B6 /* SharedModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF9C0996927C81D4EB53FFB /* SharedModel.framework */; };
+		F26C17A52E99A6D2316F62C1 /* EpidemicSoundAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6694B5AFC1F7019BA0A84 /* EpidemicSoundAPIClient.framework */; };
+		F6625F701FA02C369879698C /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1333650314B92D6CB95CC64C /* Catalog.swift */; };
+		F8F5519E755CAA8E20E0E964 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E3955FF0BF74C9342AC19 /* TrackDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03DF65244307AA15340C944D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14A4E20A687077AAAA79D76;
+			remoteInfo = Common;
+		};
+		37A70A46C03701BDB96D493D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B14A4E20A687077AAAA79D76;
+			remoteInfo = Common;
+		};
+		62514828C1E0CC7D84436872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E355FEF0F91B286533A5255;
+			remoteInfo = SharedModel;
+		};
+		723ECF06812F25F4ECA7CB6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671C917B9E4F3EA038425A70;
+			remoteInfo = CatalogBrowserUI;
+		};
+		84CE0E1E68471BF3FD80B24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E355FEF0F91B286533A5255;
+			remoteInfo = SharedModel;
+		};
+		A87499F49690775E4324772D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26E88451ADCF84AA02191816;
+			remoteInfo = CatalogBrowser;
+		};
+		CEB093634E96B775D9D72C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E355FEF0F91B286533A5255;
+			remoteInfo = SharedModel;
+		};
+		E2DE6C6947FD4B111B411588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9C82E6593D28E29881DE6C0;
+			remoteInfo = EpidemicSoundAPIClient;
+		};
+		F7650489EB8B0A4D6A262DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9C82E6593D28E29881DE6C0;
+			remoteInfo = EpidemicSoundAPIClient;
+		};
+		FDA4842CC63B24B695E73A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF29CE73B7522795328F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671C917B9E4F3EA038425A70;
+			remoteInfo = CatalogBrowserUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51E990EBEB8F0643E144F017 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62BD219BEE9CAD6C66037A6E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C1E42B1BA185EB0C432F93C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B11260BD625AD5A87C4C9A07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE771C0E89C923349E8ED45 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FDB51960AC6B8EDA7AE8A73 /* CatalogBrowserUI.framework in Embed Frameworks */,
+				B5D2C042B7734D27DF092E4D /* Common.framework in Embed Frameworks */,
+				32D6264DA5CB7D739D8E8483 /* EpidemicSoundAPIClient.framework in Embed Frameworks */,
+				A7D6E47869A45759F14B7672 /* SharedModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30C0063CE1A6AF5FF3F1468 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD358BCF61026B51D5DAEDB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC60D707968BD9386A2940BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		006FB3C8E6927F634B08B8BA /* CatalogBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDD18D865FBDDB0EE648CA5 /* CatalogBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A47D472BC6E877399A8E9A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		12B7014ADF29846932886E05 /* InteractorsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorsContainer.swift; sourceTree = "<group>"; };
+		1333650314B92D6CB95CC64C /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		14A6563694885F6F5FE3C135 /* Assets+CatalogBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets+CatalogBrowser.swift"; sourceTree = "<group>"; };
+		14F641D1898DEC58383210CE /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		17C1598C880FC5E4975E6E98 /* CatalogBrowser.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = CatalogBrowser.plist; sourceTree = "<group>"; };
+		1A03554BBBC9216E91CA0EA7 /* Common.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Common.plist; sourceTree = "<group>"; };
+		20A257143CAA335BB4C2476C /* DefaultAPIClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIClientDelegate.swift; sourceTree = "<group>"; };
+		2308ECE35D1083F6564B3B0B /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		23AD1BB4BB6D28EE1BA3BA51 /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		27BCDB11EBF155C38184E5F7 /* Gifu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gifu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DE740B02FA4A6EB5C000B1 /* Entities+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entities+Mocks.swift"; sourceTree = "<group>"; };
+		29A62D11E25A00A5849BF242 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3512CB12D9FCDD01EF008B67 /* NukeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NukeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D4A84BC9067008C2D91BFA /* EpidemicSoundAPIClientTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = EpidemicSoundAPIClientTests.plist; sourceTree = "<group>"; };
+		400F1217A1204C0A1355A634 /* CatalogBrowserUITests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = CatalogBrowserUITests.plist; sourceTree = "<group>"; };
+		4028D3EE8528346E6DBAA7AF /* Difference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Difference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41DD37924EC4AB9279DA53F2 /* ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
+		462D6F5B9FB8BE77EBF943B6 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		4B2996190183C44709A6901C /* TrackCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCellView.swift; sourceTree = "<group>"; };
+		4F4547ABFC31F665955A5062 /* EpidemicSoundAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpidemicSoundAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BEEBF1C06E8360297D9A2C /* Mocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		520FC13C73EBEF6428853830 /* FeaturedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCellView.swift; sourceTree = "<group>"; };
+		55496155831059757D3A6C9C /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		567E3955FF0BF74C9342AC19 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
+		6885D7285E285935300AFDBE /* FeaturedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedList.swift; sourceTree = "<group>"; };
+		6BDF492040C1B5974A951874 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		7444D77B0FA0E85F5E65BBDF /* EpidemicSoundResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpidemicSoundResources.swift; sourceTree = "<group>"; };
+		7985A923179C422112E36C8E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		7D4E2092DC00D8ACDBA35ABF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		863CA1E51E9D32FD75E2626E /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B76E4EBEC26CC26FA44490 /* CatalogBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBrowserApp.swift; sourceTree = "<group>"; };
+		89F19CEE69EF144B6173086D /* SharedModel.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = SharedModel.plist; sourceTree = "<group>"; };
+		8A054A8BDFDFBC77C28BE5A3 /* CatalogBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBrowserUITests.swift; sourceTree = "<group>"; };
+		8A936E33D5D58BF16BC8BAD4 /* Bundle+CatalogBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+CatalogBrowser.swift"; sourceTree = "<group>"; };
+		90FFE2DE0D2F6B8C25B78585 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92F79C6E99C2CB48D205E382 /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
+		A4280E506F74538CD9D3F581 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		A515B5E1BA5B3ACF1B16C547 /* FeaturedElementDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedElementDetailView.swift; sourceTree = "<group>"; };
+		AA00EA0151BFB136109CC03E /* Nuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC16BD1B604A0F1D1BA435BE /* CatalogBrowserTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = CatalogBrowserTests.plist; sourceTree = "<group>"; };
+		B07FF0C0429505A849F0ABB9 /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
+		BBE6694B5AFC1F7019BA0A84 /* EpidemicSoundAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EpidemicSoundAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3EC64374331613D5F74963 /* EpidemicSoundAPIClient.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = EpidemicSoundAPIClient.plist; sourceTree = "<group>"; };
+		BE96123A4A0A8377422DDD63 /* CatalogBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63547624E8127C100CBDC38 /* SearchParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
+		C7A5B20A563F645B0AB0D770 /* CatalogBrowserUI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = CatalogBrowserUI.plist; sourceTree = "<group>"; };
+		C8D90F1314B6AB0DFCEAAA8B /* CatalogBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBrowserTests.swift; sourceTree = "<group>"; };
+		CBF9C0996927C81D4EB53FFB /* SharedModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41EBCB6F5985024B75C9B34 /* CatalogBrowserUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatalogBrowserUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D8C1B9BD5B879B5D6C4F30 /* TrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListView.swift; sourceTree = "<group>"; };
+		F7709797A5F06235CA5B9ED0 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		F89090F4458166950BD3FF32 /* Diff+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diff+Helper.swift"; sourceTree = "<group>"; };
+		FE274BE343F468788E743142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13C878B6AC0CF0999AD771EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42485918207404297D614370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26C17A52E99A6D2316F62C1 /* EpidemicSoundAPIClient.framework in Frameworks */,
+				02995FD54B1090CC2FA2784D /* Difference.framework in Frameworks */,
+				721EC34AFAD0715924C8D234 /* Mocker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2BE568C486CDC71B46E76A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEEF1E45480C2C6AD39FD0D /* CatalogBrowserUI.framework in Frameworks */,
+				E4A6A6065D4676E70B232B39 /* EpidemicSoundAPIClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A660785E20FB7078D2B3FA13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042B52F162E81C1E9B752037 /* Common.framework in Frameworks */,
+				79EFC89571DF408508095743 /* SharedModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC670796E79006F050531D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59D041D95BAFB7E6168090E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D1FBF40315BB33C8FC9F21 /* SharedModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8822284E4C68F53692EF5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76157BF9A28D96ABB06AB130 /* Common.framework in Frameworks */,
+				F23FFE9EAFF19D5932B827B6 /* SharedModel.framework in Frameworks */,
+				E199BEC60C165E0800A0AD86 /* Gifu.framework in Frameworks */,
+				1F875D81CEF7D11376BFFA85 /* Nuke.framework in Frameworks */,
+				0855A5202D5AC7D5FCE6EB7A /* NukeUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E7652F4B137542A45C7C76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76182EF820797CC906803DDE /* CatalogBrowserUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006E8AF68E8B62BD7CB11711 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6BDF492040C1B5974A951874 /* DependencyInjector.swift */,
+				12B7014ADF29846932886E05 /* InteractorsContainer.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1AE6F59C36318BAF540D1B7E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				41DD37924EC4AB9279DA53F2 /* ClientTests.swift */,
+				F89090F4458166950BD3FF32 /* Diff+Helper.swift */,
+				28DE740B02FA4A6EB5C000B1 /* Entities+Mocks.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2FD42A9ED4E4067C5CCDC1BD /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				6AC6BAEBE4F7C3DC57E30F90 /* InfoPlists */,
+				C88CFB481AC5A136BDEDD853 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		49E9E5B1EBB482A757A1260B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				006E8AF68E8B62BD7CB11711 /* Sources */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		564AE3753BA2CABD89C0E4D3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				88B76E4EBEC26CC26FA44490 /* CatalogBrowserApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		57AF277756353B469FE0BAE6 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				2FD42A9ED4E4067C5CCDC1BD /* Derived */,
+				7316DB8CAA19B35057D188C9 /* Targets */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		58D4C98ADA64EDC42996CFFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B54A35622D02076644B90762 /* Preview Content */,
+				FE274BE343F468788E743142 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6490ECCC5871203B52C5B926 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7985A923179C422112E36C8E /* APIError.swift */,
+				7D4E2092DC00D8ACDBA35ABF /* Client.swift */,
+				20A257143CAA335BB4C2476C /* DefaultAPIClientDelegate.swift */,
+				7444D77B0FA0E85F5E65BBDF /* EpidemicSoundResources.swift */,
+				29A62D11E25A00A5849BF242 /* Request.swift */,
+				23AD1BB4BB6D28EE1BA3BA51 /* Serializer.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6AC6BAEBE4F7C3DC57E30F90 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				17C1598C880FC5E4975E6E98 /* CatalogBrowser.plist */,
+				AC16BD1B604A0F1D1BA435BE /* CatalogBrowserTests.plist */,
+				C7A5B20A563F645B0AB0D770 /* CatalogBrowserUI.plist */,
+				400F1217A1204C0A1355A634 /* CatalogBrowserUITests.plist */,
+				1A03554BBBC9216E91CA0EA7 /* Common.plist */,
+				BE3EC64374331613D5F74963 /* EpidemicSoundAPIClient.plist */,
+				35D4A84BC9067008C2D91BFA /* EpidemicSoundAPIClientTests.plist */,
+				89F19CEE69EF144B6173086D /* SharedModel.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		6FDE69EA47D1998E4F3B0807 /* CatalogBrowserUI */ = {
+			isa = PBXGroup;
+			children = (
+				AD92CDA255D693E931AE8C16 /* Sources */,
+				E4E37B9276B82B3F517AF9AB /* Tests */,
+			);
+			path = CatalogBrowserUI;
+			sourceTree = "<group>";
+		};
+		7213A9F4B312DF811E084CBB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C8D90F1314B6AB0DFCEAAA8B /* CatalogBrowserTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7316DB8CAA19B35057D188C9 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				928B406C118BD56C589C3A49 /* CatalogBrowser */,
+				6FDE69EA47D1998E4F3B0807 /* CatalogBrowserUI */,
+				49E9E5B1EBB482A757A1260B /* Common */,
+				DFC4E75281C9C1DBB3931B67 /* EpidemicSoundAPIClient */,
+				B4C58A7E686F52CB8B477520 /* SharedModel */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		7BAD11BC5BCBD2A3F7B06C41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B505A671643C0C19588712E /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				A515B5E1BA5B3ACF1B16C547 /* FeaturedElementDetailView.swift */,
+				6885D7285E285935300AFDBE /* FeaturedList.swift */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
+		928B406C118BD56C589C3A49 /* CatalogBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				58D4C98ADA64EDC42996CFFD /* Resources */,
+				564AE3753BA2CABD89C0E4D3 /* Sources */,
+				7213A9F4B312DF811E084CBB /* Tests */,
+			);
+			path = CatalogBrowser;
+			sourceTree = "<group>";
+		};
+		9B5D561AEEA15964A2399AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FDD18D865FBDDB0EE648CA5 /* CatalogBrowser.app */,
+				006FB3C8E6927F634B08B8BA /* CatalogBrowserTests.xctest */,
+				D41EBCB6F5985024B75C9B34 /* CatalogBrowserUI.framework */,
+				BE96123A4A0A8377422DDD63 /* CatalogBrowserUITests.xctest */,
+				863CA1E51E9D32FD75E2626E /* Common.framework */,
+				4028D3EE8528346E6DBAA7AF /* Difference.framework */,
+				BBE6694B5AFC1F7019BA0A84 /* EpidemicSoundAPIClient.framework */,
+				4F4547ABFC31F665955A5062 /* EpidemicSoundAPIClientTests.xctest */,
+				27BCDB11EBF155C38184E5F7 /* Gifu.framework */,
+				51BEEBF1C06E8360297D9A2C /* Mocker.framework */,
+				AA00EA0151BFB136109CC03E /* Nuke.framework */,
+				3512CB12D9FCDD01EF008B67 /* NukeUI.framework */,
+				CBF9C0996927C81D4EB53FFB /* SharedModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD92CDA255D693E931AE8C16 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C2E7F41442F17EEC569B62DE /* Components */,
+				8B505A671643C0C19588712E /* Featured */,
+				EF2B629ECD93B40450344B0E /* Helper */,
+				C3DA0BD27A442FC5C5012615 /* Track */,
+				B07FF0C0429505A849F0ABB9 /* GenreView.swift */,
+				92F79C6E99C2CB48D205E382 /* MoodView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B4C58A7E686F52CB8B477520 /* SharedModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA3B7F4D59855199EF32A92F /* Sources */,
+			);
+			path = SharedModel;
+			sourceTree = "<group>";
+		};
+		B54A35622D02076644B90762 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				90FFE2DE0D2F6B8C25B78585 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA3B7F4D59855199EF32A92F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1333650314B92D6CB95CC64C /* Catalog.swift */,
+				462D6F5B9FB8BE77EBF943B6 /* Feature.swift */,
+				A4280E506F74538CD9D3F581 /* Genre.swift */,
+				55496155831059757D3A6C9C /* Mood.swift */,
+				C63547624E8127C100CBDC38 /* SearchParams.swift */,
+				F7709797A5F06235CA5B9ED0 /* SearchResult.swift */,
+				14F641D1898DEC58383210CE /* Track.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C2E7F41442F17EEC569B62DE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				10A47D472BC6E877399A8E9A /* ErrorView.swift */,
+				520FC13C73EBEF6428853830 /* FeaturedCellView.swift */,
+				4B2996190183C44709A6901C /* TrackCellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C3DA0BD27A442FC5C5012615 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				567E3955FF0BF74C9342AC19 /* TrackDetailView.swift */,
+				D9D8C1B9BD5B879B5D6C4F30 /* TrackListView.swift */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		C88CFB481AC5A136BDEDD853 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				14A6563694885F6F5FE3C135 /* Assets+CatalogBrowser.swift */,
+				8A936E33D5D58BF16BC8BAD4 /* Bundle+CatalogBrowser.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CBBC4F5FDE80E506D5871D17 = {
+			isa = PBXGroup;
+			children = (
+				57AF277756353B469FE0BAE6 /* Project */,
+				7BAD11BC5BCBD2A3F7B06C41 /* Frameworks */,
+				9B5D561AEEA15964A2399AF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFC4E75281C9C1DBB3931B67 /* EpidemicSoundAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				6490ECCC5871203B52C5B926 /* Sources */,
+				1AE6F59C36318BAF540D1B7E /* Tests */,
+			);
+			path = EpidemicSoundAPIClient;
+			sourceTree = "<group>";
+		};
+		E4E37B9276B82B3F517AF9AB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8A054A8BDFDFBC77C28BE5A3 /* CatalogBrowserUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		EF2B629ECD93B40450344B0E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2308ECE35D1083F6564B3B0B /* Loadable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26E88451ADCF84AA02191816 /* CatalogBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094810012DFF85C8901D07D7 /* Build configuration list for PBXNativeTarget "CatalogBrowser" */;
+			buildPhases = (
+				77FAF3659EE1746715D2E9DE /* Sources */,
+				33DDE166E86904985CE5F9BD /* Resources */,
+				CBE771C0E89C923349E8ED45 /* Embed Frameworks */,
+				4F2BE568C486CDC71B46E76A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21A1C0A990433AD3E363A5B4 /* PBXTargetDependency */,
+				5A70341163080C8B8A0F85C0 /* PBXTargetDependency */,
+			);
+			name = CatalogBrowser;
+			productName = CatalogBrowser;
+			productReference = 0FDD18D865FBDDB0EE648CA5 /* CatalogBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E355FEF0F91B286533A5255 /* SharedModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FEC4EC3E5FB79D4A995A7C /* Build configuration list for PBXNativeTarget "SharedModel" */;
+			buildPhases = (
+				9DA3AC8F09684427581D768B /* Sources */,
+				A6591CD80479B2F2912DE3B8 /* Resources */,
+				D30C0063CE1A6AF5FF3F1468 /* Embed Frameworks */,
+				BC670796E79006F050531D52 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedModel;
+			productName = SharedModel;
+			productReference = CBF9C0996927C81D4EB53FFB /* SharedModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		321E8B6F11640FE03D19480C /* CatalogBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86EF2A34757A3AC8C500E5DF /* Build configuration list for PBXNativeTarget "CatalogBrowserTests" */;
+			buildPhases = (
+				6490F162C25BB4C94752FA84 /* Sources */,
+				4FB44F77C5B3571959336102 /* Resources */,
+				62BD219BEE9CAD6C66037A6E /* Embed Frameworks */,
+				13C878B6AC0CF0999AD771EB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5229F19F2A7D7170C5145761 /* PBXTargetDependency */,
+			);
+			name = CatalogBrowserTests;
+			productName = CatalogBrowserTests;
+			productReference = 006FB3C8E6927F634B08B8BA /* CatalogBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		671C917B9E4F3EA038425A70 /* CatalogBrowserUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A179F049791B7DD859F8A4CE /* Build configuration list for PBXNativeTarget "CatalogBrowserUI" */;
+			buildPhases = (
+				AACD8BBBAF88EE6B376B93EC /* Sources */,
+				E08A4408FD9E6D32E8A23BEB /* Resources */,
+				8C1E42B1BA185EB0C432F93C /* Embed Frameworks */,
+				E8822284E4C68F53692EF5E8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540D03236A4CA7EF9EDAB3C1 /* PBXTargetDependency */,
+				A6F94BEE123D1B97ACC4F24F /* PBXTargetDependency */,
+			);
+			name = CatalogBrowserUI;
+			productName = CatalogBrowserUI;
+			productReference = D41EBCB6F5985024B75C9B34 /* CatalogBrowserUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		732C484C1B1C8887F59F1DF8 /* EpidemicSoundAPIClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E491825CC454B3BD5F06D90 /* Build configuration list for PBXNativeTarget "EpidemicSoundAPIClientTests" */;
+			buildPhases = (
+				E01781BA16C9864AEF6A007C /* Sources */,
+				195A571C744780B92AEBC46F /* Resources */,
+				B11260BD625AD5A87C4C9A07 /* Embed Frameworks */,
+				42485918207404297D614370 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78848D0049EB279A5ADF1CC /* PBXTargetDependency */,
+			);
+			name = EpidemicSoundAPIClientTests;
+			productName = EpidemicSoundAPIClientTests;
+			productReference = 4F4547ABFC31F665955A5062 /* EpidemicSoundAPIClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93B52267C85B26ABEDF11641 /* CatalogBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C07D1341BE508020A92188E /* Build configuration list for PBXNativeTarget "CatalogBrowserUITests" */;
+			buildPhases = (
+				BA0BDAC67AF975A1C28FB9E8 /* Sources */,
+				CE3C59F0F315550C62ED0AAD /* Resources */,
+				EC60D707968BD9386A2940BF /* Embed Frameworks */,
+				F4E7652F4B137542A45C7C76 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				660B085CD2C6A0A891EAD280 /* PBXTargetDependency */,
+			);
+			name = CatalogBrowserUITests;
+			productName = CatalogBrowserUITests;
+			productReference = BE96123A4A0A8377422DDD63 /* CatalogBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B14A4E20A687077AAAA79D76 /* Common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A363E3FFD109C4AD5B546334 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildPhases = (
+				E9F0AA95A0C5B6D732B9D191 /* Sources */,
+				F3FB2A476AB8D2E68DDC0D2C /* Resources */,
+				DDD358BCF61026B51D5DAEDB /* Embed Frameworks */,
+				C59D041D95BAFB7E6168090E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03BF1DA054A68FF24A794B12 /* PBXTargetDependency */,
+			);
+			name = Common;
+			productName = Common;
+			productReference = 863CA1E51E9D32FD75E2626E /* Common.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9C82E6593D28E29881DE6C0 /* EpidemicSoundAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B00DFE07AC153C7A50E0C6 /* Build configuration list for PBXNativeTarget "EpidemicSoundAPIClient" */;
+			buildPhases = (
+				BE5AE63CC11D2956FA6CD21F /* Sources */,
+				213F77424C2EDEA4029ECECE /* Resources */,
+				51E990EBEB8F0643E144F017 /* Embed Frameworks */,
+				A660785E20FB7078D2B3FA13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A834C1C329D7F819A20E5638 /* PBXTargetDependency */,
+				C4873D60CA298AC568248B95 /* PBXTargetDependency */,
+			);
+			name = EpidemicSoundAPIClient;
+			productName = EpidemicSoundAPIClient;
+			productReference = BBE6694B5AFC1F7019BA0A84 /* EpidemicSoundAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF29CE73B7522795328F8199 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = tuist.io;
+				TargetAttributes = {
+					321E8B6F11640FE03D19480C = {
+						TestTargetID = 26E88451ADCF84AA02191816;
+					};
+				};
+			};
+			buildConfigurationList = 786758080E8B15F6284C9AC5 /* Build configuration list for PBXProject "CatalogBrowser" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CBBC4F5FDE80E506D5871D17;
+			productRefGroup = 9B5D561AEEA15964A2399AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26E88451ADCF84AA02191816 /* CatalogBrowser */,
+				321E8B6F11640FE03D19480C /* CatalogBrowserTests */,
+				671C917B9E4F3EA038425A70 /* CatalogBrowserUI */,
+				93B52267C85B26ABEDF11641 /* CatalogBrowserUITests */,
+				D9C82E6593D28E29881DE6C0 /* EpidemicSoundAPIClient */,
+				732C484C1B1C8887F59F1DF8 /* EpidemicSoundAPIClientTests */,
+				2E355FEF0F91B286533A5255 /* SharedModel */,
+				B14A4E20A687077AAAA79D76 /* Common */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		195A571C744780B92AEBC46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213F77424C2EDEA4029ECECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DDE166E86904985CE5F9BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92F1C3EDC9FF83A1427EB2B /* Assets.xcassets in Resources */,
+				22CB7960B672A12B87B883C4 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB44F77C5B3571959336102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6591CD80479B2F2912DE3B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3C59F0F315550C62ED0AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08A4408FD9E6D32E8A23BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FB2A476AB8D2E68DDC0D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6490F162C25BB4C94752FA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDBADC5D4B0FE02D50BCAFE /* CatalogBrowserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77FAF3659EE1746715D2E9DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C29C6F66A7BFC4B378FC08 /* Assets+CatalogBrowser.swift in Sources */,
+				BACF9375CAAD1C59813B815D /* Bundle+CatalogBrowser.swift in Sources */,
+				98C9F13F3F37C4C5506F3CDA /* CatalogBrowserApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA3AC8F09684427581D768B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6625F701FA02C369879698C /* Catalog.swift in Sources */,
+				00F3590B6C900D379DF3E3EE /* Feature.swift in Sources */,
+				C67C568345C829D510BE22C1 /* Genre.swift in Sources */,
+				B8F3C0188739620730678872 /* Mood.swift in Sources */,
+				DD9D7AA1BC06B1A623CBCB2A /* SearchParams.swift in Sources */,
+				C554C923E9D4C3749874C1CC /* SearchResult.swift in Sources */,
+				B82F95E1CA7FF85DF63ED56E /* Track.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AACD8BBBAF88EE6B376B93EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A20535A3CF61238A5C8BAC /* ErrorView.swift in Sources */,
+				04297EA0673A4390243A47A2 /* FeaturedCellView.swift in Sources */,
+				54CB358C610BFE32E80A7EBA /* TrackCellView.swift in Sources */,
+				4F08E1CAFFA687832E80D9A1 /* FeaturedElementDetailView.swift in Sources */,
+				518BB0F2C0A36B1DFBFF9433 /* FeaturedList.swift in Sources */,
+				7EAD26E37687A5FD87822B12 /* GenreView.swift in Sources */,
+				98601F177F0BE6FBFCFD4CA4 /* Loadable.swift in Sources */,
+				0C8EC1DCEFDF68F04F6A95FF /* MoodView.swift in Sources */,
+				F8F5519E755CAA8E20E0E964 /* TrackDetailView.swift in Sources */,
+				E4643ED6CD3A2C2C5BEC6095 /* TrackListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0BDAC67AF975A1C28FB9E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E5994C6C41A1D0F16BF2CF /* CatalogBrowserUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5AE63CC11D2956FA6CD21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23874B3C1A5B5642D83A085A /* APIError.swift in Sources */,
+				242CE4AF185263375E957214 /* Client.swift in Sources */,
+				40422067CE26E358A1904036 /* DefaultAPIClientDelegate.swift in Sources */,
+				37DBFD08A0962C4DDBF5F995 /* EpidemicSoundResources.swift in Sources */,
+				4E825664BFC367C5DD75B894 /* Request.swift in Sources */,
+				B5C96914256166DAD7D9BBD5 /* Serializer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01781BA16C9864AEF6A007C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AECE263B8E6CDCC629BECB9 /* ClientTests.swift in Sources */,
+				80BBADC2EA81B5F64326576E /* Diff+Helper.swift in Sources */,
+				61F51B724F5817E507F675E4 /* Entities+Mocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0AA95A0C5B6D732B9D191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F164629CD7475F28D57F89C /* DependencyInjector.swift in Sources */,
+				EB31A7EE94DFC4A3D2540CB1 /* InteractorsContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03BF1DA054A68FF24A794B12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SharedModel;
+			target = 2E355FEF0F91B286533A5255 /* SharedModel */;
+			targetProxy = CEB093634E96B775D9D72C40 /* PBXContainerItemProxy */;
+		};
+		21A1C0A990433AD3E363A5B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CatalogBrowserUI;
+			target = 671C917B9E4F3EA038425A70 /* CatalogBrowserUI */;
+			targetProxy = FDA4842CC63B24B695E73A87 /* PBXContainerItemProxy */;
+		};
+		5229F19F2A7D7170C5145761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CatalogBrowser;
+			target = 26E88451ADCF84AA02191816 /* CatalogBrowser */;
+			targetProxy = A87499F49690775E4324772D /* PBXContainerItemProxy */;
+		};
+		540D03236A4CA7EF9EDAB3C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Common;
+			target = B14A4E20A687077AAAA79D76 /* Common */;
+			targetProxy = 03DF65244307AA15340C944D /* PBXContainerItemProxy */;
+		};
+		5A70341163080C8B8A0F85C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EpidemicSoundAPIClient;
+			target = D9C82E6593D28E29881DE6C0 /* EpidemicSoundAPIClient */;
+			targetProxy = E2DE6C6947FD4B111B411588 /* PBXContainerItemProxy */;
+		};
+		660B085CD2C6A0A891EAD280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CatalogBrowserUI;
+			target = 671C917B9E4F3EA038425A70 /* CatalogBrowserUI */;
+			targetProxy = 723ECF06812F25F4ECA7CB6F /* PBXContainerItemProxy */;
+		};
+		A6F94BEE123D1B97ACC4F24F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SharedModel;
+			target = 2E355FEF0F91B286533A5255 /* SharedModel */;
+			targetProxy = 62514828C1E0CC7D84436872 /* PBXContainerItemProxy */;
+		};
+		A834C1C329D7F819A20E5638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Common;
+			target = B14A4E20A687077AAAA79D76 /* Common */;
+			targetProxy = 37A70A46C03701BDB96D493D /* PBXContainerItemProxy */;
+		};
+		C4873D60CA298AC568248B95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SharedModel;
+			target = 2E355FEF0F91B286533A5255 /* SharedModel */;
+			targetProxy = 84CE0E1E68471BF3FD80B24E /* PBXContainerItemProxy */;
+		};
+		D78848D0049EB279A5ADF1CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EpidemicSoundAPIClient;
+			target = D9C82E6593D28E29881DE6C0 /* EpidemicSoundAPIClient */;
+			targetProxy = F7650489EB8B0A4D6A262DBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		003DC764100CEE4B86C87F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/Common.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.Common;
+				PRODUCT_NAME = Common;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0D2B1743A2545F1C8F2321DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowserUITests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowserUITests;
+				PRODUCT_NAME = CatalogBrowserUITests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		298962565481AFD7E194AC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowserUI.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowserUI;
+				PRODUCT_NAME = CatalogBrowserUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C4E8FFDB9C3693F4FF33BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50B7DE8E45EE7FCECC4177C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowser.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowser;
+				PRODUCT_NAME = CatalogBrowser;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		542D5C01A781A4B8130A41BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/EpidemicSoundAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.EpidemicSoundAPIClient;
+				PRODUCT_NAME = EpidemicSoundAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D49E3D22D35BC78F5738B33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowserTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowserTests;
+				PRODUCT_NAME = CatalogBrowserTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatalogBrowser.app/CatalogBrowser";
+				TEST_TARGET_NAME = CatalogBrowser;
+			};
+			name = Release;
+		};
+		68ECEBCF2695E67DB353FC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/EpidemicSoundAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.EpidemicSoundAPIClient;
+				PRODUCT_NAME = EpidemicSoundAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80C7DD204E30A83F7829771B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A34287FD173F2F372F316B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/Common.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.Common;
+				PRODUCT_NAME = Common;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DC12E3245054CC999157A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/EpidemicSoundAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.EpidemicSoundAPIClientTests;
+				PRODUCT_NAME = EpidemicSoundAPIClientTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FB5A0BF2D3FF881B1CC419E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/SharedModel.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.SharedModel;
+				PRODUCT_NAME = SharedModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D9F06263AF0263A0DEF9ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowser.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowser;
+				PRODUCT_NAME = CatalogBrowser;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7AD25A70132C7BECC1C10CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowserUI.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowserUI;
+				PRODUCT_NAME = CatalogBrowserUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7ADA3A7E19E6458303085AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowserTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowserTests;
+				PRODUCT_NAME = CatalogBrowserTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatalogBrowser.app/CatalogBrowser";
+				TEST_TARGET_NAME = CatalogBrowser;
+			};
+			name = Debug;
+		};
+		EBDEFDCE94ED9F8FF32271E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/CatalogBrowserUITests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.CatalogBrowserUITests;
+				PRODUCT_NAME = CatalogBrowserUITests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE89F781AE0625BFDADC1EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Derived/InfoPlists/SharedModel.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.SharedModel;
+				PRODUCT_NAME = SharedModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9737B6C51BE76C3FFCD09A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Derived/InfoPlists/EpidemicSoundAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.EpidemicSoundAPIClientTests;
+				PRODUCT_NAME = EpidemicSoundAPIClientTests;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		094810012DFF85C8901D07D7 /* Build configuration list for PBXNativeTarget "CatalogBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9F06263AF0263A0DEF9ECE /* Debug */,
+				50B7DE8E45EE7FCECC4177C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E491825CC454B3BD5F06D90 /* Build configuration list for PBXNativeTarget "EpidemicSoundAPIClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC12E3245054CC999157A7C /* Debug */,
+				F9737B6C51BE76C3FFCD09A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19FEC4EC3E5FB79D4A995A7C /* Build configuration list for PBXNativeTarget "SharedModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE89F781AE0625BFDADC1EBF /* Debug */,
+				8FB5A0BF2D3FF881B1CC419E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		786758080E8B15F6284C9AC5 /* Build configuration list for PBXProject "CatalogBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C7DD204E30A83F7829771B /* Debug */,
+				3C4E8FFDB9C3693F4FF33BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C07D1341BE508020A92188E /* Build configuration list for PBXNativeTarget "CatalogBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D2B1743A2545F1C8F2321DB /* Debug */,
+				EBDEFDCE94ED9F8FF32271E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86EF2A34757A3AC8C500E5DF /* Build configuration list for PBXNativeTarget "CatalogBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7ADA3A7E19E6458303085AF /* Debug */,
+				5D49E3D22D35BC78F5738B33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B00DFE07AC153C7A50E0C6 /* Build configuration list for PBXNativeTarget "EpidemicSoundAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68ECEBCF2695E67DB353FC3E /* Debug */,
+				542D5C01A781A4B8130A41BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A179F049791B7DD859F8A4CE /* Build configuration list for PBXNativeTarget "CatalogBrowserUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AD25A70132C7BECC1C10CA /* Debug */,
+				298962565481AFD7E194AC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A363E3FFD109C4AD5B546334 /* Build configuration list for PBXNativeTarget "Common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A34287FD173F2F372F316B2 /* Debug */,
+				003DC764100CEE4B86C87F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF29CE73B7522795328F8199 /* Project object */;
+}

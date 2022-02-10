@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CatalogBrowser.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Tuist"
+      name = "Tuist">
+      <Group
+         location = "group:Dependencies"
+         name = "Dependencies">
+         <Group
+            location = "group:SwiftPackageManager"
+            name = "SwiftPackageManager">
+            <Group
+               location = "group:.build"
+               name = ".build">
+               <Group
+                  location = "group:checkouts"
+                  name = "checkouts">
+                  <FileRef
+                     location = "group:Difference/Difference.xcodeproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Gifu/Gifu.xcodeproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Mocker/Mocker.xcodeproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Nuke/Nuke.xcodeproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NukeUI/NukeUI.xcodeproj">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+</Workspace>
